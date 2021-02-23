@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks: yes
+    - name: Turn Selinux to permissive mode
+       selinux:
+         policy: targeted
+         state: permissive
+    
+
